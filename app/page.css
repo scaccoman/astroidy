@@ -94,7 +94,6 @@
   text-align: center;
 }
 
-/* Disabled tiles */
 .react-calendar__tile--disabled {
   background-color: #666;
   color: #888;
