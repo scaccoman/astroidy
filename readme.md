@@ -4,6 +4,8 @@
 
 Astroidy is a full-stack application designed to display information about asteroids. This project is a technical challenge that demonstrates best practices and code reusability while providing a fun and engaging experience.
 
+![Astroidy Screenshot](./public/preview.png)
+
 ## Features
 
 - **Display a list of asteroids:** View a comprehensive list of asteroids fetched from NASA's API.
