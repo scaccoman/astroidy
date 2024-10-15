@@ -1,5 +1,6 @@
 import '#/styles/globals.css';
 import { Metadata } from 'next';
+import { Boundary } from '#/ui/boundary';
 
 export const metadata: Metadata = {
   title: {
@@ -28,9 +29,11 @@ export default function RootLayout({
       <body className="h-full overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')]">
         <div className="flex h-full items-center justify-center p-4">
           <div className="h-full w-5/6 rounded-lg p-px shadow-lg shadow-black/20">
-            <div className="w-full rounded-lg bg-black p-3.5 lg:p-6">
+            {/* <div className="w-full rounded-lg bg-black p-3.5 lg:p-6"> */}
+            <Boundary labels={[]} color="violet">
               {children}
-            </div>
+            </Boundary>
+            {/* </div> */}
           </div>
         </div>
       </body>

@@ -46,6 +46,7 @@ interface Asteroid {
     orbiting_body: string;
   }>;
   is_sentry_object: boolean;
+  neo_reference_id: string;
 }
 
 export default Asteroid;

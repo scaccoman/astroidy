@@ -127,3 +127,14 @@
     left: 100%;
   }
 }
+
+/* Smooth animation for asteroid details */
+.asteroid-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.asteroid-details.open {
+  max-height: 500px; /* Adjust based on content height */
+}
