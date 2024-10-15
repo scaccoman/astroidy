@@ -1,0 +1,140 @@
+/* Dark theme for DateRangePicker */
+.react-daterange-picker,
+.react-calendar {
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.react-calendar__tile {
+  background-color: #444;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Selected date styles */
+.react-calendar__tile--active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Date range highlight (for dates between the start and end of the range) */
+.react-calendar__tile--range {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.react-calendar__tile--rangeStart,
+.react-calendar__tile--rangeEnd {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Hover effect on range tiles */
+.react-calendar__tile--range:enabled:hover,
+.react-calendar__tile--rangeStart:enabled:hover,
+.react-calendar__tile--rangeEnd:enabled:hover {
+  background-color: #004085;
+  color: #fff;
+}
+
+/* Make hover state easily visible */
+.react-calendar__tile--hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+/* Navigation (month, year selectors) */
+.react-calendar__navigation__label,
+.react-calendar__navigation__arrow {
+  color: #ddd;
+}
+
+.react-calendar__navigation__label:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+/* DateRangePicker input fields */
+.react-daterange-picker__inputGroup {
+  background-color: #222;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.react-daterange-picker__wrapper {
+  border-radius: 8px;
+}
+
+.react-daterange-picker__inputGroup__input {
+  color: #fff;
+}
+
+.react-daterange-picker__calendar {
+  background-color: #222;
+  border: 1px solid #555;
+  border-radius: 8px;
+}
+
+.react-daterange-picker__range-divider {
+  width: 10%;
+  text-align: center;
+}
+
+.react-calendar__tile--disabled {
+  background-color: #666;
+  color: #888;
+}
+
+/* Loading bar */
+.loading-bar {
+  position: relative;
+  height: 6px;
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.loading-bar::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background-color: #fff;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    left: 100%;
+  }
+}
+
+/* Smooth animation for asteroid details */
+.asteroid-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.asteroid-details.open {
+  max-height: 500px; /* Adjust based on content height */
+}
