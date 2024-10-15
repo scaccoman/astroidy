@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import DateRangePicker from '@wojtekmaj/react-daterange-picker';
 import '@wojtekmaj/react-daterange-picker/dist/DateRangePicker.css';
 import 'react-calendar/dist/Calendar.css';
@@ -22,7 +22,7 @@ export default function Page() {
   );
   const [loading, setLoading] = useState(false);
   const [sort, setSort] = useState(false);
-  const isInitialRender = useRef(true);
+  // const isInitialRender = useRef(true);
 
   useEffect(() => {
     async function fetchAsteroids() {
@@ -51,11 +51,12 @@ export default function Page() {
       }
     }
 
-    if (isInitialRender.current) {
-      isInitialRender.current = false;
-    } else {
-      fetchAsteroids();
-    }
+    fetchAsteroids();
+    // if (isInitialRender.current) {
+    //   isInitialRender.current = false;
+    // } else {
+    //   fetchAsteroids();
+    // }
   }, [dateRange, sort]);
 
   const handleDateRangeChange = (dateRange: DateRange) => {
