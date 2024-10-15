@@ -54,3 +54,11 @@ pnpm install
 ```sh
 pnpm dev
 ```
+
+### Running End-to-End Tests
+
+1. Run the end-to-end tests:
+
+```sh
+pnpm test:e2e
+```
