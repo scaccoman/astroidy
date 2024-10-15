@@ -1,28 +1,54 @@
-# Next.js App Router Playground
+# Astroidy
 
-Next.js recently introduced the App Router with support for:
+**[Live Demo](https://astroidy.scaccoman.com)**
 
-- **Layouts:** Easily share UI while preserving state and avoiding re-renders.
-- **Server Components:** Making server-first the default for the most dynamic applications.
-- **Streaming:** Display instant loading states and stream in updates.
-- **Suspense for Data Fetching:** `async`/`await` support and the `use` hook for component-level fetching.
+Astroidy is a full-stack application designed to display information about asteroids. This project is a technical challenge that demonstrates best practices and code reusability while providing a fun and engaging experience.
 
-The App Router can coexist with the existing `pages` directory for incremental adoption. While you **don't need to use the App Router** when upgrading to Next.js 13, we're laying the foundations to build complex interfaces while shipping less JavaScript.
+## Features
 
-## Running Locally
+- **Display a list of asteroids:** View a comprehensive list of asteroids fetched from NASA's API.
+- **Search by a range of dates:** Filter asteroids by specifying a start and end date.
+- **Asteroid details:** Click on an asteroid to see detailed information.
+- **Sort by name:** Sort the list of asteroids alphabetically by name.
 
-1. Install dependencies:
+## Tech Stack
+
+- **Frontend:** React.js, Next.js
+- **Backend:** Node.js
+- **API:** [NASA's NeoWs (Near Earth Object Web Service)](https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=DEMO_KEY)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js v20 LTS
+- pnpm
+
+### Installation
+
+1. Clone the repository:
+
+```sh
+git clone https://github.com/yourusername/astroidy.git
+cd astroidy
+```
+
+### Running Locally
+
+1. Use correct Node.js version:
+
+```sh
+nvm use
+```
+
+2. Install dependencies:
 
 ```sh
 pnpm install
 ```
 
-2. Start the dev server:
+3. Start the dev server:
 
 ```sh
 pnpm dev
 ```
-
-## Documentation
-
-https://nextjs.org/docs

@@ -26,6 +26,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# editor config
+.vscode/
+
 # local env files
 .env*
 !.env*.example
